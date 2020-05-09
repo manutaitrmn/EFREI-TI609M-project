@@ -1,5 +1,6 @@
 #include "Book.h"
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -35,4 +36,8 @@ void Book::setNbPages(int nbPages) {
 
 void Book::setContent(string content) {
 	this->content = content;
+}
+
+void Book::print() {
+	cout << "Book" << endl;
 }

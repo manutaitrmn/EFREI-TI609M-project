@@ -12,7 +12,7 @@ int main() {
 		View view;
 		Controller controller(db,view);
 		controller.menu();
-	} catch(string const& e) {
+	} catch(string const &e) {
 		cerr << "ERROR : " << e << endl;
 	}
 	return 0;

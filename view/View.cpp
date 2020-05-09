@@ -6,6 +6,20 @@
 
 using namespace std;
 
+
+
+void View::print(string text) {
+	cout << text;
+}
+
+void View::println(string text) {
+	cout << text << endl;
+}
+
+void View::newLine() {
+	cout << endl;
+}
+
 void View::printMenu() {
 	cout << endl << "Choose an action:" << endl
 		<< "1. List all magazines" << endl
@@ -18,8 +32,11 @@ void View::printMenu() {
 		<< "8. Search for a word" << endl
 		<< "9. Total weight of hardback books" << endl
 		<< "10. Quit the program\n" << endl;
-
 	cout << "n°: ";
+}
+
+void View::printWordSearch(int id, string word, int c) {
+	cout << "In the book id: " << id << " the word \"" << word << "\" appears " << c << " time(s)." << endl;
 }
 
 void View::printBooks(vector<Book> books) {

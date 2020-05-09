@@ -17,6 +17,7 @@ public:
 	void setTitle(string title);
 	void setNbPages(int nbPages);
 	void setContent(string content);
+	virtual void print();
 
 private:
 	static int c;

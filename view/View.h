@@ -13,6 +13,10 @@ using namespace std;
 class View 
 {
 public:
+	void print(string text);
+	void println(string text);
+	void printWordSearch(int id, string word, int c);
+	void newLine();
 	void printMenu();
 	void printBooks(vector<Book> books);
 	void printMagazines(vector<Magazine> magazines);

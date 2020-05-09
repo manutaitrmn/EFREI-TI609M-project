@@ -5,6 +5,7 @@
 class Controller {
 public:
 	Controller(Database &db, View view) : db(db), view(view) {};
+
 	void menu();
 
 	void showBooks();
@@ -14,7 +15,12 @@ public:
 	void showAdvertisers();
 	void showMagazineInfo();
 	void showTotalHardbacksWeight();
-
+	void removeBook();
+	void addMagazine();
+	void searchWord();
+	bool equals(string a, string b);
+	bool isNumber(string nb);
+	string toAlnum(string text);
 
 private:
 	Database db;
